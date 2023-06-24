@@ -1,0 +1,8 @@
+* Link:
+https://subsplease.org/api/?f=search&tz=Asia/Calcutta&s=one%20piece
+* Link:
+https://subsplease.org/api/?f=latest&tz=Asia/Calcutta
+* Link:
+https://www.npmjs.com/package/telegra.ph
+* Link:
+https://subsplease.org/api/?f=search&tz=Asia/Calcutta&s=one%20piece&p=1
