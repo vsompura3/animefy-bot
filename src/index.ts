@@ -50,7 +50,7 @@ bot.command('recent', async ctx => {
       parse_mode: 'MarkdownV2',
     },
   )
-  // console.log(sentMsg)
+  console.log(sentMsg) //! Remove this
   Handler(ctx, sentMsg.message_id)
 })
 

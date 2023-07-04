@@ -9,6 +9,7 @@ async function recentAnimes(): Promise<null | SubpleaseAnimeResponse> {
 
   if (res?.ok) {
     data = await res.json()
+    console.log(data) //! Remove this
     return data
   }
   return null

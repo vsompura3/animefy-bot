@@ -1,4 +1,3 @@
-import Telegraph from 'telegra.ph'
 import { Context } from 'telegraf'
 import { author, botName } from '../constants/constant.js'
 import { SubpleaseAnimeResponse } from '../types/types.js'
@@ -28,7 +27,7 @@ async function Handler(ctx: Context, editMessageId: number) {
   for (const key in res) {
     if (res.hasOwnProperty(key)) {
       const dataObj = res[key]
-      console.log(telegraph_access_token)
+      console.log(telegraph_access_token) //! Remove this
       msg += `\n============ ${dataObj.time} Episode ============\n*${dataObj.show}*\nEpisode: [${dataObj.episode}]\nDownload Links: `
       for (let idx in dataObj.downloads) {
         let magnetURL: string = 'https://github.com/vsompura3/animefy-bot'
@@ -46,7 +45,7 @@ async function Handler(ctx: Context, editMessageId: number) {
         )
           .then(res => res.json())
           .then(data => {
-            console.log(data)
+            console.log(data) //! Remove this
             magnetURL = data.result.url
             msg += `[${dataObj.downloads[idx].res}p](${magnetURL}) \t\t`
           })
