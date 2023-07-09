@@ -4,7 +4,10 @@ import { SubpleaseAnimeResponse } from '../types/types.js'
 import { sleep } from './helper.js'
 import { recentAnimes } from './recentAnimes.js'
 
-async function Handler(ctx: Context, editMessageId: number) {
+async function recentHandler(
+  ctx: Context,
+  editMessageId: number,
+): Promise<void> {
   let telegraph_access_token: string = ''
   await fetch(
     `https://api.telegra.ph/createAccount?short_name=${botName}&author_name=${botName}}`,
@@ -68,4 +71,4 @@ async function Handler(ctx: Context, editMessageId: number) {
   }
 }
 
-export { Handler }
+export { recentHandler }
